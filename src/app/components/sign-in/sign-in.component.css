@@ -1,0 +1,11 @@
+.main-area{
+background: url("../../../assets/Pinelandinfra_Image.png");
+background-size: cover;
+background-position: top right;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.logo-area{
+  padding: 60px;
+}

@@ -9,3 +9,7 @@ background-position: top right;
 .logo-area{
   padding: 60px;
 }
+.hero-text {
+  font-style: 30px;
+  font-weight: 300;
+}

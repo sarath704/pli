@@ -3,36 +3,36 @@
 <div class="logo-area">
     <div class="px-logo">
       <a href="/" target="_blank">
-        <!-- <img src="../../../assets/Pinelandinfra_logo.png" class="img-responsive" alt="Pinelandinfra"> -->
+        <img src="../../../assets/Pinelandinfra_logo.png" class="img-responsive" alt="Pinelandinfra">
       </a>
     </div>
   </div>
-    <div class="authBlock">
-      <h2>Sign In</h2>
+    <div class="authBlock d-flex flex-column">
+       <h3 class="text-center hero-text"> OPPORTUNITY FOR BUILDING SUSTAINABLE <br>
+        FUTURE INFRASTRUCTURE</h3>
+        <div class="form-area">
       <div class="formGroup">
         <label for="uname">User Name</label>
-        <input type="text" class="formControl" name="uname"  id="uname" placeholder="Username" #userName  required>
+        <input type="text" class="formControl" name="uname"  id="uname" placeholder="Enter Username" #userName  required>
       </div>
 
       <div class="formGroup">
           <label  for="password">Password</label>
-        <input type="password" class="formControl" name="password" id="password" placeholder="Password" #userPassword required>
+        <input type="password" class="formControl" name="password" id="password" placeholder="Enter Password" #userPassword required>
       </div>
 
       <!-- Calling SignIn Api from AuthService -->
       <div class="formGroup mt-20">
-        <input type="button" class="btn btn-primary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+        <button type="button" class="btn btn-green" (click)="authService.SignIn(userName.value, userPassword.value)">SIGN IN</button>
       </div>
     </div>
-
+    <p class="text-center mb-20">Pineland Infra system is not available to the public. The system is only accessible by our partners, investors and other qualified users. For more information please drop in a mail at infor@pinelandinfra.com.</p>
+  </div>
 
 
     <!-- <div class="redirectToLogin">
       <span>Don't have an account?<span class="redirect" routerLink="/register-user"> Sign Up</span></span>
     </div> -->
-
-  </div>
-  <div class="main-area displayTableCell2">
 
   </div>
 </div>

@@ -1,10 +1,9 @@
 import { Injectable, NgZone } from '@angular/core';
 import { User } from "../services/user";
-import { auth } from 'firebase/app';
 import { AngularFireAuth } from "@angular/fire/auth";
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Router } from "@angular/router";
-
+import * as firebase from 'firebase/app';
 @Injectable({
   providedIn: 'root'
 })
@@ -54,8 +53,8 @@ export class AuthService {
         this.SendVerificationMail();
         this.SetUserData(result.user);
       }).catch((error) => {
-        window.alert(error.message)
-      })
+        window.alert(error.message);
+      });
   }
 
   // Send email verfificaiton when new user sign up
@@ -82,10 +81,6 @@ export class AuthService {
     return (user !== null && user.emailVerified !== false) ? true : false;
   }
 
-  // Sign in with Google
-  GoogleAuth() {
-    return this.AuthLogin(new auth.GoogleAuthProvider());
-  }
 
   // Auth logic to run auth providers
   AuthLogin(provider) {
@@ -93,11 +88,11 @@ export class AuthService {
     .then((result) => {
        this.ngZone.run(() => {
           this.router.navigate(['home']);
-        })
+        });
       this.SetUserData(result.user);
     }).catch((error) => {
-      window.alert(error)
-    })
+      window.alert(error);
+    });
   }
 
   /* Setting up user data when sign in with username/password,

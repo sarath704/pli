@@ -11,7 +11,7 @@ import { VerifyEmailComponent } from '../../components/verify-email/verify-email
 // Import canActivate guard services
 import { AuthGuard } from "../../shared/guard/auth.guard";
 import { SecureInnerPagesGuard } from "../../shared/guard/secure-inner-pages.guard";
-import { HomeComponent } from 'src/app/components/home/home.component';
+import { HomeComponent } from '../../components/home/home.component';
 
 // Include route guard in routes array
 const routes: Routes = [
@@ -25,7 +25,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{ useHash: true })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 

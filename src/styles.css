@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600');
 
 * {
   -webkit-box-sizing: border-box;
@@ -299,11 +299,7 @@ input:-moz-placeholder {
   text-transform: uppercase;
 }
 
-.nav-link {
-  padding: 1.5rem 1rem;
-  border-bottom: 1px solid #dde0e2;
-  cursor: pointer;
-}
+
 
 .sidebar .nav-link.active,
 .sidebar a:hover,
@@ -671,9 +667,7 @@ body .table thead th {
     display: block;
   }
 
-  .displayTable {
-    background: white
-  }
+
 
   .authBlock {
     box-shadow: none
@@ -682,4 +676,8 @@ body .table thead th {
   .px-logo {
     display: none;
   }
+}
+.nav-link{
+  padding: 1rem 1.5rem;
+  line-height: 1;
 }

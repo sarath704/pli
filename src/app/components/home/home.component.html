@@ -4,13 +4,12 @@
   <div class="col12">
       <nav class="navbar navbar navbar-expand navbar-light bg-faded">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item"
-                [routerLinkActive]="['active']">
-              <a class="nav-link" [routerLink]="['about']">About </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#" (click)="goToLink($event,'#about');">About </a>
             </li>
             <li class="nav-item"
-                [routerLinkActive]="['active']">
-              <a class="nav-link" [routerLink]="['contact']">Contact </a>
+            >
+              <a class="nav-link" href="#"  (click)="goToLink($event,'#contact');">Contact </a>
             </li>
           </ul>
         </nav>
@@ -22,7 +21,7 @@
     <div class="col-12">
         <div class="px-logo mb-60">
             <a href="/" target="_blank">
-              <img src="../../../assets/pineland-black.png" class="img-responsive" alt="Pinelandinfra">
+              <!-- <img src="../../../assets/pineland-black.png" class="img-responsive" alt="Pinelandinfra"> -->
             </a>
           </div>
       <h2>
